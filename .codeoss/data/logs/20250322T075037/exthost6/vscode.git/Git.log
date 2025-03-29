@@ -1,0 +1,34 @@
+2025-03-22 09:00:41.668 [info] [main] Log level: Info
+2025-03-22 09:00:41.668 [info] [main] Validating found git in: "git"
+2025-03-22 09:00:41.668 [info] [main] Using git "2.43.0" from "git"
+2025-03-22 09:00:41.668 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [6ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2025-03-22 09:00:41.668 [info] [Model][openRepository] Opened repository: /home/priyasirohi502/yoga-poses-recommender-python
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [4ms]
+2025-03-22 09:00:41.668 [info] > git config --get commit.template [10ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [9ms]
+2025-03-22 09:00:41.668 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-03-22 09:00:41.668 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/priyasirohi502/yoga-poses-recommender-python/.git/refs/remotes/origin/main'
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [7ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2025-03-22 09:00:41.668 [info] > git status -z -uall [13ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [21ms]
+2025-03-22 09:00:41.668 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [65ms]
+2025-03-22 09:00:41.668 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [69ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [92ms]
+2025-03-22 09:00:41.668 [info] > git config --local branch.main.vscode-merge-base [37ms]
+2025-03-22 09:00:41.668 [info] > git config --get commit.template [58ms]
+2025-03-22 09:00:41.668 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [8ms]
+2025-03-22 09:00:41.668 [info] > git rev-parse --show-toplevel [51ms]
+2025-03-22 09:00:41.668 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-22 09:00:41.668 [info] > git merge-base refs/heads/main refs/remotes/origin/main [158ms]
+2025-03-22 09:00:41.668 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [33ms]
+2025-03-22 09:00:41.668 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/priyasirohi502/yoga-poses-recommender-python/.git/refs/remotes/origin/main'
+2025-03-22 09:00:41.668 [info] > git diff --name-status -z --diff-filter=ADMR 035d8c76d248faedc330c2d838f1d3f2ed226f78...refs/remotes/origin/main [32ms]
+2025-03-22 09:00:41.670 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-03-22 09:00:41.694 [info] > git status -z -uall [18ms]
+2025-03-22 09:00:41.705 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [21ms]
+2025-03-22 09:00:41.929 [info] > git check-ignore -v -z --stdin [3ms]
+2025-03-22 09:00:42.333 [info] > git show --textconv :data/yoga_poses_with_descriptions.json [36ms]
+2025-03-22 09:00:42.333 [info] > git ls-files --stage -- /home/priyasirohi502/yoga-poses-recommender-python/data/yoga_poses_with_descriptions.json [25ms]

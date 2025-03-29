@@ -1,0 +1,6 @@
+2025-03-22 09:00:41.163 [warning] Dir "/home/priyasirohi502/yoga-poses-recommender-python/.pixi/envs" is not watchable (directory does not exist)
+2025-03-22 09:00:41.439 [info] Python interpreter path: ./.venv/bin/python
+2025-03-22 09:00:41.693 [info] > pyenv which python
+2025-03-22 09:00:41.693 [info] cwd: .
+2025-03-22 09:00:41.988 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-03-22 09:00:51.342 [info] Starting Jedi language server for yoga-poses-recommender-python.

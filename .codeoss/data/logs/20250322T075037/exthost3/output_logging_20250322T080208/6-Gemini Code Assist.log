@@ -1,0 +1,151 @@
+language client is not ready, cannot initialize chat state
+I0322 08:02:39.339913    2721 serve.go:43] cloudcode_cli (Feb 19 2025 21:00:54 -0800, cl:728935864 baseline:726298444)
+I0322 08:02:39.339969    2721 serve.go:44] Command line: ["/home/priyasirohi502/.cache/cloud-code/cloudcode_cli/cloudcode_cli/6e759dbf/cloudcode_cli" "duet" "-logtostderr"]
+I0322 08:02:39.341947    2721 life_cycle.go:166] Initializing. Architecture: "amd64", Operating system: "linux"
+I0322 08:02:39.468271    2721 configuration.go:182] product updateChannel will be used
+I0322 08:02:39.468332    2721 configuration.go:642] language thresholds: map[]
+I0322 08:02:39.468371    2721 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0322 08:02:39.468408    2721 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0018403ed StopSequences:map[] DataFilePromptLines:0}
+I0322 08:02:39.468450    2721 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00184043d StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0322 08:02:39.468665    2721 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0322 08:02:39.468733    2721 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0322 08:02:39.468747    2721 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0322 08:02:39.468789    2721 configuration.go:284] Configured settings for canCancelRequests: true
+I0322 08:02:39.468799    2721 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0322 08:02:39.539949    2721 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0322 08:02:39.539989    2721 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0322 08:02:39.540006    2721 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0322 08:02:39.540037    2721 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0322 08:02:39.540053    2721 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0322 08:02:39.540077    2721 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0322 08:02:39.540091    2721 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0322 08:02:39.540106    2721 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0322 08:02:39.540125    2721 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0322 08:02:39.540138    2721 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0322 08:02:39.540153    2721 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0322 08:02:39.540168    2721 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0322 08:02:39.540185    2721 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0322 08:02:39.540202    2721 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0322 08:02:39.540212    2721 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0322 08:02:39.540316    2721 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0322 08:02:39.540327    2721 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0322 08:02:39.540341    2721 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0322 08:02:39.540417    2721 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0322 08:02:39.540440    2721 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0322 08:02:39.540457    2721 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0322 08:02:39.540497    2721 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0322 08:02:39.540511    2721 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0322 08:02:39.540524    2721 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0322 08:02:39.540543    2721 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0322 08:02:39.540609    2721 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0322 08:02:39.540665    2721 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0322 08:02:39.540686    2721 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0322 08:02:39.540710    2721 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0322 08:02:39.540761    2721 configuration.go:468] Repopulating context cache from document cache
+I0322 08:02:39.540936    2721 cloudcode.go:45] Using Cloud Code API
+I0322 08:02:39.544639    2721 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 33db243a-c069-4e01-9d4e-5d9db344db02\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-d53ca482-b5ac-4c97-b962-dbdf0722e2e3"}
+I0322 08:02:39.855443    2721 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0322 08:02:39.855477    2721 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0322 08:02:39.855492    2721 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0322 08:02:39.855506    2721 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0322 08:02:39.855530    2721 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0322 08:02:39.855543    2721 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0322 08:02:39.855554    2721 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0322 08:02:39.855564    2721 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0322 08:02:39.855585    2721 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0322 08:02:39.855597    2721 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0322 08:02:39.855614    2721 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0322 08:02:39.855631    2721 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0322 08:02:39.855643    2721 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0322 08:02:39.855656    2721 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0322 08:02:39.855673    2721 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0322 08:02:39.855695    2721 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0322 08:02:39.855705    2721 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0322 08:02:39.855722    2721 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0322 08:02:39.855734    2721 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0322 08:02:39.855744    2721 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0322 08:02:39.855756    2721 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0322 08:02:39.855768    2721 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0322 08:02:39.855778    2721 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0322 08:02:39.855795    2721 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0322 08:02:39.855807    2721 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0322 08:02:39.855823    2721 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0322 08:02:39.855852    2721 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0322 08:02:39.855869    2721 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0322 08:02:39.855896    2721 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0322 08:02:39.980436    2721 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 0e6799e9-c1f6-44db-894d-0423c8d1e27c\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-c5c64368-8b3e-48be-9054-4e41d755a36b"}
+I0322 08:02:40.351826    2721 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 8b84d0ef-0c3d-4abf-9aa3-60ffe537e050\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-6728c331-eed8-47d8-9f1a-c3387acd6590"}
+I0322 08:04:30.919851    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:04:30.919985    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:04:30.920058    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:04:30.920077    2721 conversation.go:836] Unable to retrieve excluded files for request #8: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:04:30.920134    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:04:30.920151    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:05:23.605064    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:05:23.605107    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:05:23.605156    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:05:23.605174    2721 conversation.go:836] Unable to retrieve excluded files for request #13: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:05:23.605267    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:05:23.605279    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:05:54.309625    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:05:54.309673    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:05:54.309717    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:05:54.309731    2721 conversation.go:836] Unable to retrieve excluded files for request #15: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:05:54.309757    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:05:54.309768    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:06:05.068175    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:06:05.068224    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:06:05.068268    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:06:05.068286    2721 conversation.go:836] Unable to retrieve excluded files for request #26: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:06:05.068325    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:06:05.068336    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:06:05.248268    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:06:05.248322    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:06:05.248419    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:06:05.248437    2721 conversation.go:836] Unable to retrieve excluded files for request #28: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:06:05.248466    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:06:05.248475    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:06:05.527989    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:06:05.528033    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:06:05.528078    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:06:05.528094    2721 conversation.go:836] Unable to retrieve excluded files for request #32: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:06:05.528122    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:06:05.528135    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:06:06.510777    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:06:06.510828    2721 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0322 08:06:06.510877    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:06:06.510901    2721 conversation.go:836] Unable to retrieve excluded files for request #35: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:06:06.510930    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:06:06.510939    2721 rag_cache.go:851] rerankByLangBoost=0
+W0322 08:06:10.175943    2721 document.go:267] Error computing chars added only: getting byte offset for end of change range: invalid column number
+I0322 08:06:10.276206    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:06:10.276261    2721 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0322 08:06:10.276304    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:06:10.276319    2721 conversation.go:836] Unable to retrieve excluded files for request #39: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:06:10.276346    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:06:10.276379    2721 rag_cache.go:851] rerankByLangBoost=0
+I0322 08:06:39.470493    2721 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+I0322 08:09:54.148510    2721 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0322 08:09:54.148562    2721 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0322 08:09:54.148612    2721 ide_context.go:131] Unable to read file at /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude
+/home/priyasirohi502/yoga-poses-recommender-python
+file:///home/priyasirohi502/yoga-poses-recommender-python
+I0322 08:09:54.148630    2721 conversation.go:836] Unable to retrieve excluded files for request #44: open /home/priyasirohi502/yoga-poses-recommender-python/.aiexclude: no such file or directory
+I0322 08:09:54.148698    2721 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0322 08:09:54.148709    2721 rag_cache.go:851] rerankByLangBoost=0

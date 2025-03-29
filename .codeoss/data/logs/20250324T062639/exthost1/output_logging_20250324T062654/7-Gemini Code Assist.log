@@ -1,0 +1,381 @@
+language client is not ready, cannot initialize chat state
+I0324 06:27:11.228515    1403 serve.go:43] cloudcode_cli (Feb 19 2025 21:00:54 -0800, cl:728935864 baseline:726298444)
+I0324 06:27:11.228576    1403 serve.go:44] Command line: ["/home/priyasirohi502/.cache/cloud-code/cloudcode_cli/cloudcode_cli/6e759dbf/cloudcode_cli" "duet" "-logtostderr"]
+I0324 06:27:11.230142    1403 life_cycle.go:166] Initializing. Architecture: "amd64", Operating system: "linux"
+I0324 06:27:11.350788    1403 configuration.go:182] product updateChannel will be used
+I0324 06:27:11.350839    1403 configuration.go:642] language thresholds: map[]
+I0324 06:27:11.350855    1403 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0324 06:27:11.350878    1403 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc001324cdd StopSequences:map[] DataFilePromptLines:0}
+I0324 06:27:11.350908    1403 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc001324cfd StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0324 06:27:11.351009    1403 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0324 06:27:11.351037    1403 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0324 06:27:11.351076    1403 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0324 06:27:11.351114    1403 configuration.go:284] Configured settings for canCancelRequests: true
+I0324 06:27:11.351121    1403 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0324 06:27:11.404951    1403 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 06:27:11.404995    1403 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 06:27:11.405016    1403 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 06:27:11.405031    1403 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 06:27:11.405148    1403 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 06:27:11.405164    1403 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 06:27:11.405182    1403 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 06:27:11.405197    1403 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 06:27:11.405216    1403 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 06:27:11.405224    1403 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 06:27:11.405240    1403 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 06:27:11.405251    1403 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 06:27:11.405259    1403 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 06:27:11.405273    1403 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 06:27:11.405285    1403 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 06:27:11.405295    1403 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 06:27:11.405303    1403 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 06:27:11.405312    1403 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 06:27:11.405325    1403 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 06:27:11.405337    1403 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 06:27:11.405346    1403 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 06:27:11.405355    1403 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 06:27:11.405367    1403 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 06:27:11.405375    1403 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 06:27:11.405386    1403 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 06:27:11.405396    1403 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 06:27:11.405408    1403 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 06:27:11.405420    1403 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 06:27:11.405441    1403 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 06:27:11.405509    1403 configuration.go:468] Repopulating context cache from document cache
+I0324 06:27:11.405710    1403 cloudcode.go:45] Using Cloud Code API
+I0324 06:27:11.410715    1403 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 24dea604-d835-48c6-8ccb-58c079841a21\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-46f16cb8-03cd-475d-a373-152c54a2e399"}
+I0324 06:27:11.429303    1403 handler.go:159] cancel was requested for: 4, needs to be canceled: true
+I0324 06:27:11.993128    1403 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 06:27:11.993150    1403 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 06:27:11.993167    1403 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 06:27:11.993193    1403 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 06:27:11.993204    1403 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 06:27:11.993226    1403 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 06:27:11.993234    1403 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 06:27:11.993245    1403 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 06:27:11.993260    1403 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 06:27:11.993277    1403 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 06:27:11.993297    1403 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 06:27:11.993308    1403 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 06:27:11.993319    1403 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 06:27:11.993327    1403 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 06:27:11.993337    1403 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 06:27:11.993356    1403 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 06:27:11.993369    1403 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 06:27:11.993387    1403 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 06:27:11.993399    1403 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 06:27:11.993420    1403 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 06:27:11.993429    1403 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 06:27:11.993441    1403 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 06:27:11.993453    1403 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 06:27:11.993472    1403 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 06:27:11.993483    1403 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 06:27:11.993508    1403 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 06:27:11.993523    1403 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 06:27:11.993538    1403 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 06:27:11.993561    1403 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 06:27:11.993610    1403 handler.go:146] req #4 skipped: context canceled
+I0324 06:27:12.110523    1403 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: c829a16d-b18d-4b25-802e-98e71786c440\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-9fccde1b-34dc-4003-9aa7-6df1dba3e4a2"}
+I0324 06:27:12.595147    1403 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: e9ac2b79-e791-4f22-963a-481053378aa5\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-342ad2ab-3a7f-48d2-a6db-42d88dc95574"}
+W0324 06:27:14.965430    1403 server.go:645] unknown method "$/setTrace"
+I0324 06:27:14.987025    1403 configuration.go:182] product updateChannel will be used
+I0324 06:27:14.987106    1403 configuration.go:642] language thresholds: map[]
+I0324 06:27:14.987127    1403 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0324 06:27:14.987152    1403 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0014c885d StopSequences:map[] DataFilePromptLines:0}
+I0324 06:27:14.987186    1403 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0014c887d StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0324 06:27:14.987224    1403 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0324 06:27:14.987245    1403 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0324 06:27:14.987255    1403 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0324 06:27:14.987293    1403 configuration.go:284] Configured settings for canCancelRequests: true
+I0324 06:27:14.987303    1403 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0324 06:27:14.988169    1403 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 06:27:14.988199    1403 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 06:27:14.988216    1403 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 06:27:14.988229    1403 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 06:27:14.988240    1403 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 06:27:14.988254    1403 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 06:27:14.988278    1403 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 06:27:14.988292    1403 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 06:27:14.988308    1403 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 06:27:14.988320    1403 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 06:27:14.988339    1403 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 06:27:14.988351    1403 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 06:27:14.988362    1403 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 06:27:14.988372    1403 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 06:27:14.988388    1403 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 06:27:14.988406    1403 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 06:27:14.988417    1403 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 06:27:14.988447    1403 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 06:27:14.988461    1403 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 06:27:14.988481    1403 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 06:27:14.988495    1403 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 06:27:14.988506    1403 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 06:27:14.988517    1403 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 06:27:14.988535    1403 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 06:27:14.988546    1403 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 06:27:14.988564    1403 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 06:27:14.988580    1403 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 06:27:14.988597    1403 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 06:27:14.988618    1403 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 06:27:14.988643    1403 configuration.go:468] Repopulating context cache from document cache
+W0324 06:30:55.108983    1403 server.go:645] unknown method "$/setTrace"
+I0324 06:30:55.117364    1403 configuration.go:182] product updateChannel will be used
+I0324 06:30:55.117419    1403 configuration.go:642] language thresholds: map[]
+I0324 06:30:55.117436    1403 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0324 06:30:55.117455    1403 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0017eeedd StopSequences:map[] DataFilePromptLines:0}
+I0324 06:30:55.117483    1403 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0017eef0d StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0324 06:30:55.117526    1403 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0324 06:30:55.117546    1403 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0324 06:30:55.117556    1403 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0324 06:30:55.117591    1403 configuration.go:284] Configured settings for canCancelRequests: true
+I0324 06:30:55.117600    1403 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0324 06:30:55.118336    1403 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 06:30:55.118361    1403 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 06:30:55.118372    1403 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 06:30:55.118380    1403 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 06:30:55.118389    1403 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 06:30:55.118402    1403 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 06:30:55.118409    1403 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 06:30:55.118419    1403 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 06:30:55.118430    1403 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 06:30:55.118438    1403 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 06:30:55.118451    1403 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 06:30:55.118459    1403 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 06:30:55.118465    1403 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 06:30:55.118472    1403 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 06:30:55.118483    1403 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 06:30:55.118494    1403 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 06:30:55.118502    1403 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 06:30:55.118513    1403 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 06:30:55.118520    1403 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 06:30:55.118537    1403 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 06:30:55.118545    1403 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 06:30:55.118552    1403 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 06:30:55.118560    1403 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 06:30:55.118572    1403 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 06:30:55.118579    1403 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 06:30:55.118590    1403 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 06:30:55.118600    1403 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 06:30:55.118616    1403 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 06:30:55.118633    1403 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 06:30:55.118651    1403 configuration.go:468] Repopulating context cache from document cache
+I0324 06:41:09.120986    1403 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 06:41:09.121071    1403 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 06:41:09.121138    1403 ide_context.go:131] Unable to read file at /home/priyasirohi502/.aiexclude
+/home/priyasirohi502
+file:///home/priyasirohi502
+I0324 06:41:09.121156    1403 conversation.go:836] Unable to retrieve excluded files for request #12: open /home/priyasirohi502/.aiexclude: no such file or directory
+I0324 06:41:09.121291    1403 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 06:41:09.121304    1403 rag_cache.go:851] rerankByLangBoost=0
+I0324 06:41:28.662165    1403 handler.go:159] cancel was requested for: 14, needs to be canceled: false
+I0324 06:41:28.662188    1403 handler.go:163] cancel requested for 14 but not found
+I0324 06:42:13.591255    1403 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 06:42:13.591315    1403 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 06:42:13.591359    1403 ide_context.go:131] Unable to read file at /home/priyasirohi502/.aiexclude
+/home/priyasirohi502
+file:///home/priyasirohi502
+I0324 06:42:13.591372    1403 conversation.go:836] Unable to retrieve excluded files for request #15: open /home/priyasirohi502/.aiexclude: no such file or directory
+I0324 06:42:13.591471    1403 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 06:42:13.591481    1403 rag_cache.go:851] rerankByLangBoost=0
+W0324 06:42:13.733707    1403 server.go:645] unknown method "$/setTrace"
+I0324 06:42:13.741492    1403 configuration.go:182] product updateChannel will be used
+I0324 06:42:13.741967    1403 configuration.go:642] language thresholds: map[]
+I0324 06:42:13.742128    1403 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0324 06:42:13.742562    1403 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0017a298d StopSequences:map[] DataFilePromptLines:0}
+I0324 06:42:13.742613    1403 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0017a29ad StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0324 06:42:13.743837    1403 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0324 06:42:13.743867    1403 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0324 06:42:13.743879    1403 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0324 06:42:13.743926    1403 configuration.go:284] Configured settings for canCancelRequests: true
+I0324 06:42:13.743936    1403 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0324 06:42:13.745605    1403 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 06:42:13.745637    1403 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 06:42:13.745654    1403 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 06:42:13.745666    1403 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 06:42:13.745676    1403 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 06:42:13.745692    1403 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 06:42:13.745704    1403 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 06:42:13.745720    1403 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 06:42:13.745735    1403 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 06:42:13.745748    1403 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 06:42:13.745767    1403 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 06:42:13.745778    1403 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 06:42:13.745789    1403 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 06:42:13.745799    1403 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 06:42:13.745814    1403 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 06:42:13.745830    1403 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 06:42:13.745841    1403 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 06:42:13.745857    1403 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 06:42:13.745869    1403 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 06:42:13.745890    1403 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 06:42:13.745906    1403 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 06:42:13.745919    1403 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 06:42:13.745929    1403 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 06:42:13.745947    1403 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 06:42:13.745958    1403 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 06:42:13.745977    1403 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 06:42:13.745994    1403 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 06:42:13.746011    1403 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 06:42:13.746032    1403 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 06:42:13.746078    1403 configuration.go:468] Repopulating context cache from document cache
+I0324 06:45:08.484410    1403 conversation.go:137] conversation requested (request #16): {Input:I'm not able to make this repo livr on github pls solve the issue git remote add origin https://github.com/Priya-1305/YOGA_POSES.git DocumentURI:file:///home/priyasirohi502/yoga-poses-recommender-python/templates/index.html SelectedRange:{Start:{Line:0 Character:0} End:{Line:0 Character:0}} PrependInput: UserSelectedURIs:[] ChatStreamingSetting:true}
+I0324 06:45:08.484579    1403 conversation.go:799] Starting getChatIDEContext with detected intent: UNKNOWN
+I0324 06:45:08.484614    1403 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 06:45:08.484650    1403 ide_context.go:131] Unable to read file at /home/priyasirohi502/.aiexclude
+/home/priyasirohi502
+file:///home/priyasirohi502
+I0324 06:45:08.484666    1403 conversation.go:836] Unable to retrieve excluded files for request #16: open /home/priyasirohi502/.aiexclude: no such file or directory
+I0324 06:45:08.484718    1403 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 06:45:08.484727    1403 rag_cache.go:851] rerankByLangBoost=0
+I0324 06:45:08.485804    1403 client.go:419] GenerateStreamingChat request: {"enablePromptEnhancement":true,"history":[{"author":"USER","content":"I'm not able to make this repo livr on github pls solve the issue git remote add origin https://github.com/Priya-1305/YOGA_POSES.git"}],"ideContext":{"currentFile":{"codeLanguage":"html","filePath":"/home/priyasirohi502/yoga-poses-recommender-python/templates/index.html","includedReason":"CURRENTLY_OPEN","segments":[{},{"isSelected":true},{"content":"\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003eYoga Pose Search\u003c/title\u003e\n    \u003cscript src=\"https://cdn.tailwindcss.com\"\u003e\u003c/script\u003e\n    \u003cstyle\u003e\n        .loading {\n            cursor: wait;\n        }\n        .loading * {\n            pointer-events: none; /* Disable clicks on elements while loading */\n        }\n         .loading #resultsContainer::before {\n            content: \"\";\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            border: 5px solid #f3f3f3; /* Light grey */\n            border-top: 5px solid #3498db; /* Blue */\n            border-radius: 50%;\n            width: 30px;\n            height: 30px;\n            animation: spin 2s linear infinite;\n         }\n         @keyframes spin {\n            0% { transform: translate(-50%, -50%) rotate(0deg); }\n            100% { transform: translate(-50%, -50%) rotate(360deg); }\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody class=\"bg-gray-100\"\u003e\n    \u003cdiv class=\"container mx-auto p-4\"\u003e\n        \u003ch1 class=\"text-3xl font-bold mb-4 text-center\"\u003eYoga Pose Search\u003c/h1\u003e\n        \u003cform id=\"searchForm\" class=\"mb-4\"\u003e\n            \u003cdiv class=\"mb-4\"\u003e\n                \u003clabel for=\"prompt\" class=\"block text-gray-700 text-sm font-bold mb-2\"\u003eEnter your search prompt:\u003c/label\u003e\n                \u003cinput type=\"text\" id=\"prompt\" name=\"prompt\" class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" placeholder=\"e.g., exercises for back pain\"\u003e\n                \u003cp id=\"promptError\" class=\"text-red-500 text-xs italic hidden\"\u003ePlease enter a prompt.\u003c/p\u003e\n            \u003c/div\u003e\n            \u003cdiv class=\"text-center\"\u003e\n                \u003cbutton type=\"submit\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\"\u003eSearch\u003c/button\u003e\n            \u003c/div\u003e\n        \u003c/form\u003e\n         \u003cdiv id=\"resultsContainer\" class=\"mt-4 flex flex-wrap justify-center relative\"\u003e\n            \u003c!-- Results will be displayed here --\u003e\n        \u003c/div\u003e\n    \u003c/div\u003e\n\n    \u003cscript\u003e\n        const searchForm = document.getElementById('searchForm');\n        const promptInput = document.getElementById('prompt');\n        const promptError = document.getElementById('promptError');\n        const resultsContainer = document.getElementById('resultsContainer');\n        const body = document.body;\n\n        searchForm.addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const promptValue = promptInput.value.trim();\n            if (!promptValue) {\n              promptError.classList.remove(\"hidden\");\n              return;\n            }\n             promptError.classList.add(\"hidden\");\n\n\n            body.classList.add('loading'); // Add loading class\n             resultsContainer.innerHTML = ''; // Clear previous results and show loading indicator\n\n\n            fetch('/search', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json'\n                },\n                body: JSON.stringify({ prompt: promptValue })\n            })\n            .then(response =\u003e response.json())\n            .then(data =\u003e {\n                body.classList.remove('loading'); // Remove loading class\n                if (data.error) {\n                    console.error(\"Error from API:\", data.error);\n                    resultsContainer.innerHTML = `\u003cp class=\"text-red-500\"\u003eError: ${data.error}\u003c/p\u003e`;\n\n                } else if (data.results \u0026\u0026 data.results.length \u003e 0) {\n                   displayResults(data.results)\n                } else {\n                    resultsContainer.innerHTML = `\u003cp\u003eNo results found.\u003c/p\u003e`;\n                }\n            })\n            .catch(error =\u003e {\n                body.classList.remove('loading'); // Remove loading class\n                console.error(\"Fetch error:\", error);\n                resultsContainer.innerHTML = `\u003cp class=\"text-red-500\"\u003eAn error occurred during the search.\u003c/p\u003e`;\n            });\n        });\n\n        function displayResults(results) {\n            resultsContainer.innerHTML = ''; // Clear previous results\n             results.forEach(result =\u003e {\n                const card = document.createElement('div');\n                card.className = 'max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white';\n                const imageUrl = result.metadata.metadata.photo_url; \n                 card.innerHTML = `\n                    \u003cdiv class=\"px-6 py-4\"\u003e\n                     ${imageUrl ? `\u003cimg class=\"w-full h-full object-cover mb-4\" src=\"${imageUrl}\" alt=\"${result.metadata.name || 'Yoga Pose'}\" /\u003e` : ''}\n                        \u003cdiv class=\"font-bold text-xl mb-2\"\u003e${result.metadata.metadata.name || 'N/A'}\u003c/div\u003e\n                        \u003cp class=\"text-gray-700 text-base\"\u003e\n                            ${result.metadata.metadata.description || 'N/A'}\n                        \u003c/p\u003e\n                         \u003cdiv class=\"mt-2\"\u003e\n                             \u003cspan class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\"\u003eExpertise: ${result.metadata.metadata.expertise_level || 'N/A'}\u003c/span\u003e\n                             ${result.metadata.metadata.pose_type ? result.metadata.metadata.pose_type.map(type =\u003e `\u003cspan class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\"\u003e${type}\u003c/span\u003e`).join('') : '\u003cspan\u003eN/A\u003c/span\u003e'}\n                         \u003c/div\u003e\n                         \u003cbutton class=\"mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" onclick=\"generateAndPlayAudio('${encodeURIComponent(result.metadata.metadata.description)}')\"\u003ePlay Audio\u003c/button\u003e\n                    \u003c/div\u003e\n                `;\n                resultsContainer.appendChild(card);\n            });\n        }\n\n        async function generateAndPlayAudio(description) {\n            try {\n                const response = await fetch('/generate_audio', {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/json'\n                    },\n                    body: JSON.stringify({ description })\n                });\n\n                if (!response.ok) {\n                    throw new Error(`HTTP error! status: ${response.status}`);\n                }\n\n                const audioBlob = await response.blob();\n                const audioUrl = URL.createObjectURL(audioBlob);\n                const audio = new Audio(audioUrl);\n                audio.play();\n            } catch (error) {\n                console.error('Error generating or playing audio:', error);\n                alert('Error generating audio. Please try again later.');\n            }\n        }\n    \u003c/script\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-7815e47c-3c29-4581-b047-1ca6ad97b496","userMessage":"I'm not able to make this repo livr on github pls solve the issue git remote add origin https://github.com/Priya-1305/YOGA_POSES.git"}
+I0324 06:45:08.489561    1403 client.go:419] GenerateChat request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"html","filePath":"/home/priyasirohi502/yoga-poses-recommender-python/templates/index.html","includedReason":"CURRENTLY_OPEN","segments":[{},{"isSelected":true},{"content":"\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003eYoga Pose Search\u003c/title\u003e\n    \u003cscript src=\"https://cdn.tailwindcss.com\"\u003e\u003c/script\u003e\n    \u003cstyle\u003e\n        .loading {\n            cursor: wait;\n        }\n        .loading * {\n            pointer-events: none; /* Disable clicks on elements while loading */\n        }\n         .loading #resultsContainer::before {\n            content: \"\";\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            border: 5px solid #f3f3f3; /* Light grey */\n            border-top: 5px solid #3498db; /* Blue */\n            border-radius: 50%;\n            width: 30px;\n            height: 30px;\n            animation: spin 2s linear infinite;\n         }\n         @keyframes spin {\n            0% { transform: translate(-50%, -50%) rotate(0deg); }\n            100% { transform: translate(-50%, -50%) rotate(360deg); }\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody class=\"bg-gray-100\"\u003e\n    \u003cdiv class=\"container mx-auto p-4\"\u003e\n        \u003ch1 class=\"text-3xl font-bold mb-4 text-center\"\u003eYoga Pose Search\u003c/h1\u003e\n        \u003cform id=\"searchForm\" class=\"mb-4\"\u003e\n            \u003cdiv class=\"mb-4\"\u003e\n                \u003clabel for=\"prompt\" class=\"block text-gray-700 text-sm font-bold mb-2\"\u003eEnter your search prompt:\u003c/label\u003e\n                \u003cinput type=\"text\" id=\"prompt\" name=\"prompt\" class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" placeholder=\"e.g., exercises for back pain\"\u003e\n                \u003cp id=\"promptError\" class=\"text-red-500 text-xs italic hidden\"\u003ePlease enter a prompt.\u003c/p\u003e\n            \u003c/div\u003e\n            \u003cdiv class=\"text-center\"\u003e\n                \u003cbutton type=\"submit\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\"\u003eSearch\u003c/button\u003e\n            \u003c/div\u003e\n        \u003c/form\u003e\n         \u003cdiv id=\"resultsContainer\" class=\"mt-4 flex flex-wrap justify-center relative\"\u003e\n            \u003c!-- Results will be displayed here --\u003e\n        \u003c/div\u003e\n    \u003c/div\u003e\n\n    \u003cscript\u003e\n        const searchForm = document.getElementById('searchForm');\n        const promptInput = document.getElementById('prompt');\n        const promptError = document.getElementById('promptError');\n        const resultsContainer = document.getElementById('resultsContainer');\n        const body = document.body;\n\n        searchForm.addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const promptValue = promptInput.value.trim();\n            if (!promptValue) {\n              promptError.classList.remove(\"hidden\");\n              return;\n            }\n             promptError.classList.add(\"hidden\");\n\n\n            body.classList.add('loading'); // Add loading class\n             resultsContainer.innerHTML = ''; // Clear previous results and show loading indicator\n\n\n            fetch('/search', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json'\n                },\n                body: JSON.stringify({ prompt: promptValue })\n            })\n            .then(response =\u003e response.json())\n            .then(data =\u003e {\n                body.classList.remove('loading'); // Remove loading class\n                if (data.error) {\n                    console.error(\"Error from API:\", data.error);\n                    resultsContainer.innerHTML = `\u003cp class=\"text-red-500\"\u003eError: ${data.error}\u003c/p\u003e`;\n\n                } else if (data.results \u0026\u0026 data.results.length \u003e 0) {\n                   displayResults(data.results)\n                } else {\n                    resultsContainer.innerHTML = `\u003cp\u003eNo results found.\u003c/p\u003e`;\n                }\n            })\n            .catch(error =\u003e {\n                body.classList.remove('loading'); // Remove loading class\n                console.error(\"Fetch error:\", error);\n                resultsContainer.innerHTML = `\u003cp class=\"text-red-500\"\u003eAn error occurred during the search.\u003c/p\u003e`;\n            });\n        });\n\n        function displayResults(results) {\n            resultsContainer.innerHTML = ''; // Clear previous results\n             results.forEach(result =\u003e {\n                const card = document.createElement('div');\n                card.className = 'max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white';\n                const imageUrl = result.metadata.metadata.photo_url; \n                 card.innerHTML = `\n                    \u003cdiv class=\"px-6 py-4\"\u003e\n                     ${imageUrl ? `\u003cimg class=\"w-full h-full object-cover mb-4\" src=\"${imageUrl}\" alt=\"${result.metadata.name || 'Yoga Pose'}\" /\u003e` : ''}\n                        \u003cdiv class=\"font-bold text-xl mb-2\"\u003e${result.metadata.metadata.name || 'N/A'}\u003c/div\u003e\n                        \u003cp class=\"text-gray-700 text-base\"\u003e\n                            ${result.metadata.metadata.description || 'N/A'}\n                        \u003c/p\u003e\n                         \u003cdiv class=\"mt-2\"\u003e\n                             \u003cspan class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\"\u003eExpertise: ${result.metadata.metadata.expertise_level || 'N/A'}\u003c/span\u003e\n                             ${result.metadata.metadata.pose_type ? result.metadata.metadata.pose_type.map(type =\u003e `\u003cspan class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\"\u003e${type}\u003c/span\u003e`).join('') : '\u003cspan\u003eN/A\u003c/span\u003e'}\n                         \u003c/div\u003e\n                         \u003cbutton class=\"mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" onclick=\"generateAndPlayAudio('${encodeURIComponent(result.metadata.metadata.description)}')\"\u003ePlay Audio\u003c/button\u003e\n                    \u003c/div\u003e\n                `;\n                resultsContainer.appendChild(card);\n            });\n        }\n\n        async function generateAndPlayAudio(description) {\n            try {\n                const response = await fetch('/generate_audio', {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/json'\n                    },\n                    body: JSON.stringify({ description })\n                });\n\n                if (!response.ok) {\n                    throw new Error(`HTTP error! status: ${response.status}`);\n                }\n\n                const audioBlob = await response.blob();\n                const audioUrl = URL.createObjectURL(audioBlob);\n                const audio = new Audio(audioUrl);\n                audio.play();\n            } catch (error) {\n                console.error('Error generating or playing audio:', error);\n                alert('Error generating audio. Please try again later.');\n            }\n        }\n    \u003c/script\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-99b333c7-2f53-41ad-a758-b33a896acd46","userMessage":"I'm not able to make this repo livr on github pls solve the issue git remote add origin https://github.com/Priya-1305/YOGA_POSES.git"}
+I0324 06:45:20.796595    1403 conversation.go:218] conversation response for request #16 (TraceID:aeb00ee010bca88d) &{TraceID:aeb00ee010bca88d Entity:SYSTEM MarkdownText:Okay, I understand the issue. You're having trouble pushing your
+"yoga-poses-recommender-python" project to a new GitHub repository named
+"YOGA\_POSES" under your username "Priya-1305." The `git remote add origin
+https://github.com/Priya-1305/YOGA_POSES.git` command is part of the process,
+but it's likely not the root of the problem.
+
+Here's a breakdown of the common issues and a step-by-step solution to get your
+project live on GitHub:
+
+**Understanding the Problem**
+
+The error you're likely encountering isn't explicitly shown, but it's probably
+happening during the `git push` step after setting the remote. Common errors
+include:
+
+1.  **Repository Doesn't Exist:** The repository `YOGA_POSES` might not have
+    been created on GitHub yet.
+2.  **Authentication Issues:** Git may not be properly authenticated with your
+    GitHub account, leading to permission denied errors.
+3.  **Incorrect Remote URL:** The remote URL you added might have a typo or
+    might not be associated with the correct repository.
+4.  **Branch problems:** Trying to push the wrong branch
+5.  **Local Repo issues** local repository not properly initialized.
+
+**Step-by-Step Solution**
+
+Here's the process to properly upload your project, addressing each potential
+issue:
+
+**Step 1: Create the Repository on GitHub**
+
+1.  **Log in to GitHub:** Go to https://github.com/ and log in to your
+    "Priya-1305" account.
+2.  **Create a New Repository:**
+      * Click the "+" icon in the top right corner.
+      * Select "New repository."
+      * **Repository Name:** Enter `YOGA_POSES` (or any preferred name).
+      * **Description (Optional):** Add a brief description of your project.
+      * **Public/Private:** Choose "Public" if you want it to be visible to
+        everyone or "Private" if you want to control access.
+      * **Initialize with a README (Optional):** You can choose to add a README
+        file now or later. I recommend adding it now.
+      * **Add .gitignore (Optional but Recommended):** Select "Python" from the
+        dropdown list to add a `.gitignore` file that will exclude unnecessary
+        files (like `.pyc` or `__pycache__` directories) from being tracked by
+        Git.
+      * **Choose a license (Optional but Recommended):** Select a license of
+        your choice.
+      * Click "Create repository."
+
+**Step 2: Set up the Local Repository (if not already done)**
+
+1.  **Navigate to Your Project:** Open your terminal or command prompt and use
+    the `cd` command to navigate to the
+    `/home/priyasirohi502/yoga-poses-recommender-python/` directory.
+2.  **Initialize the git repository (if not already done):**
+
+<!-- end list -->
+
+``` bash
+git init
+```
+
+3.  **Check git status:**
+
+<!-- end list -->
+
+``` bash
+git status
+```
+
+Make sure you are in the correct directory, and that git is correctly
+initialized. 3. **Add Files:** ` bash git add .  ` This command stages all the
+files in your project directory for the first commit. 4. **Commit Files:**
+
+``` bash
+git commit -m "Initial commit of yoga-poses-recommender-python project"
+```
+
+**Step 3: Connect the Local Repository to the Remote Repository**
+
+1.  **Get the Remote URL:** On your new GitHub repository page, you'll see a
+    section with the repository URL. Copy it. It should be something like:
+    `https://github.com/Priya-1305/YOGA_POSES.git`
+2.  **add remote origin:**
+    ``` bash
+    git remote add origin https://github.com/Priya-1305/YOGA_POSES.git
+    ```
+    (Replace `https://github.com/Priya-1305/YOGA_POSES.git` with the actual URL
+    you copied.) This command links your local repository to the remote GitHub
+    repository.
+
+**Step 4: Push Your Code to GitHub**
+
+1.  **Check Current branch:**
+
+<!-- end list -->
+
+``` bash
+git branch
+```
+
+If you see \*main or \*master you are in the right branch. 2. **Push the Code:**
+` bash git push -u origin main  ` \* If your branch is `master` then use: ` bash
+git push -u origin master  ` \* `-u` sets up the upstream branch, so in future
+pushes, you can just use `git push`. \* `origin` is the name of the remote you
+added. \* `main` is the name of your default branch (it might be `master`
+depending on your Git configuration).
+
+**Step 5: Handling Authentication**
+
+If you get authentication errors during the `git push` step, try these:
+
+1.  **HTTPS vs. SSH:**
+      * **HTTPS (easier for beginners):** If you are using HTTPS
+        (`https://...`), Git will likely prompt you for your GitHub username and
+        password the first time. However, GitHub now recommends using a
+        **personal access token** instead of your password for security.
+          * To generate a personal access token:
+              * Go to GitHub -\> Settings -\> Developer settings -\> Personal
+                access tokens -\> Tokens (classic).
+              * Click "Generate new token."
+              * Give it a descriptive name.
+              * Select the "repo" scope (and any other necessary scopes).
+              * Click "Generate token."
+              * **Important:** Copy the token and store it somewhere safe. You
+                won't be able to see it again. Use this token in place of your
+                password when Git asks for it.
+      * **SSH (recommended for advanced users):** If you are using SSH
+        (`git@github.com:...`), you need to have an SSH key pair set up on your
+        computer and added to your GitHub account. This is more secure but
+        requires a bit more setup. Refer to the GitHub documentation for
+        instructions on setting up SSH.
+
+**Troubleshooting**
+
+  * **"fatal: remote origin already exists.":** If you accidentally run `git
+    remote add origin ...` twice, you'll get this error. Use `git remote rm
+    origin` to remove the old remote, and then add it again.
+  * **"fatal: not a git repository":** If you get this error, it means you're
+    not in a directory that has been initialized as a Git repository. Go back to
+    Step 2.
+  * **Branch is different:** Make sure that you are pushing to the right branch.
+  * **File in ignore:** Check if the files are gitignored.
+
+**After you follow these steps, you should be able to push your code to the
+remote YOGA\_POSES git repository. I hope this helps\!**
+ Citations:[] PromptCitations:[] IDEContext:0xc00089bea0 RagStatus:RAG_NOT_FOUND TimeToFirstToken:0 AgentProcessingDetails:<nil> YieldInfo:<nil>}
+I0324 06:45:36.969802    1403 handler.go:159] cancel was requested for: 17, needs to be canceled: false
+I0324 06:45:36.969818    1403 handler.go:163] cancel requested for 17 but not found

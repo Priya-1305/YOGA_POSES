@@ -1,0 +1,305 @@
+2025-03-22 08:02:10.783 [warning] Dir "/home/priyasirohi502/yoga-poses-recommender-python/.pixi/envs" is not watchable (directory does not exist)
+2025-03-22 08:02:10.783 [info] Starting Environment refresh
+2025-03-22 08:02:10.783 [info] Searching for interpreters in posix paths locator
+2025-03-22 08:02:10.783 [info] Searching for pyenv environments
+2025-03-22 08:02:10.783 [info] Searching for conda environments
+2025-03-22 08:02:10.783 [info] Searching for global virtual environments
+2025-03-22 08:02:10.783 [info] Searching for custom virtual environments
+2025-03-22 08:02:10.783 [info] pyenv is not installed
+2025-03-22 08:02:10.783 [info] Finished searching for pyenv environments: 17 milliseconds
+2025-03-22 08:02:10.783 [info] Finished searching for custom virtual envs: 16 milliseconds
+2025-03-22 08:02:10.783 [info] > conda info --json
+2025-03-22 08:02:10.783 [info] > hatch env show --json
+2025-03-22 08:02:10.783 [info] cwd: .
+2025-03-22 08:02:10.783 [info] > pyenv which python
+2025-03-22 08:02:10.783 [info] cwd: .
+2025-03-22 08:02:10.783 [info] Finished searching for global virtual envs: 47 milliseconds
+2025-03-22 08:02:10.800 [info] Found: /bin/python --> /bin/python3.12
+2025-03-22 08:02:10.812 [info] Found: /bin/python3 --> /bin/python3.12
+2025-03-22 08:02:10.813 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-03-22 08:02:11.036 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2025-03-22 08:02:11.036 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2025-03-22 08:02:11.037 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-03-22 08:02:11.092 [info] Finished searching for interpreters in posix paths locator: 400 milliseconds
+2025-03-22 08:02:11.092 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-03-22 08:02:11.106 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-03-22 08:02:11.106 [info] Environments refresh paths discovered (event): 417 milliseconds
+2025-03-22 08:02:11.106 [info] Environments refresh paths discovered: 417 milliseconds
+2025-03-22 08:02:11.190 [info] Environments refresh finished (event): 501 milliseconds
+2025-03-22 08:02:11.201 [info] Environment refresh took 512 milliseconds
+2025-03-22 08:02:11.206 [info] Python interpreter path: /bin/python
+2025-03-22 08:02:13.467 [info] Starting Jedi language server for yoga-poses-recommender-python.
+2025-03-22 08:02:18.986 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-03-22 08:11:21.848 [info] Selected workspace /home/priyasirohi502/yoga-poses-recommender-python for creating virtual environment.
+2025-03-22 08:11:48.828 [info] Selected interpreter /bin/python for creating virtual environment.
+2025-03-22 08:12:17.668 [info] Running Env creation script:  [
+  '/bin/python',
+  '/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/create_venv.py',
+  '--git-ignore',
+  '--requirements',
+  '/home/priyasirohi502/yoga-poses-recommender-python/requirements.txt'
+]
+2025-03-22 08:12:17.668 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/create_venv.py --git-ignore --requirements ./requirements.txt
+2025-03-22 08:12:17.668 [info] cwd: .
+2025-03-22 08:12:18.023 [info] Running: /bin/python -m venv .venv
+2025-03-22 08:12:19.408 [info] > ./.venv/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-03-22 08:12:19.408 [info] Environments refresh paths discovered: 125 milliseconds
+2025-03-22 08:12:19.492 [info] Environments refresh finished (event): 209 milliseconds
+2025-03-22 08:12:22.893 [info] CREATED_VENV:/home/priyasirohi502/yoga-poses-recommender-python/.venv/bin/python
+2025-03-22 08:12:22.894 [info] Creating: /home/priyasirohi502/yoga-poses-recommender-python/.venv/.gitignore
+CREATE_VENV.UPGRADING_PIP
+Running: /home/priyasirohi502/yoga-poses-recommender-python/.venv/bin/python -m pip install --upgrade pip
+2025-03-22 08:12:23.382 [info] Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (24.0)
+2025-03-22 08:12:23.529 [info] Collecting pip
+2025-03-22 08:12:23.585 [info]   Downloading pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+2025-03-22 08:12:23.603 [info] Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+2025-03-22 08:12:23.699 [info]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 30.6 MB/s eta 0:00:00
+2025-03-22 08:12:23.700 [info] 
+2025-03-22 08:12:23.722 [info] Installing collected packages: pip
+2025-03-22 08:12:23.723 [info]   Attempting uninstall: pip
+2025-03-22 08:12:23.726 [info]     Found existing installation: pip 24.0
+2025-03-22 08:12:23.777 [info]     Uninstalling pip-24.0:
+2025-03-22 08:12:23.788 [info]       Successfully uninstalled pip-24.0
+2025-03-22 08:12:25.146 [info] Successfully installed pip-25.0.1
+2025-03-22 08:12:25.303 [info] CREATE_VENV.UPGRADED_PIP
+VENV_INSTALLING_REQUIREMENTS: ['/home/priyasirohi502/yoga-poses-recommender-python/requirements.txt']
+VENV_INSTALLING_REQUIREMENTS: /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt
+Running: /home/priyasirohi502/yoga-poses-recommender-python/.venv/bin/python -m pip install -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt
+2025-03-22 08:12:25.952 [info] Ignoring cffi: markers 'platform_python_implementation == "PyPy"' don't match your environment
+2025-03-22 08:12:25.952 [info] Ignoring colorama: markers 'sys_platform == "win32"' don't match your environment
+2025-03-22 08:12:25.954 [info] Ignoring pycparser: markers 'platform_python_implementation == "PyPy"' don't match your environment
+2025-03-22 08:12:26.126 [info] Collecting aiohappyeyeballs==2.4.4 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 3))
+2025-03-22 08:12:26.178 [info]   Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl (14 kB)
+2025-03-22 08:12:26.623 [info] Collecting aiohttp==3.11.11 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 6))
+2025-03-22 08:12:26.629 [info]   Downloading aiohttp-3.11.11-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+2025-03-22 08:12:26.701 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 39.7 MB/s eta 0:00:00
+2025-03-22 08:12:26.703 [info] 
+2025-03-22 08:12:26.730 [info] Collecting aiosignal==1.3.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 38))
+2025-03-22 08:12:26.734 [info]   Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+2025-03-22 08:12:26.760 [info] Collecting annotated-types==0.7.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 41))
+2025-03-22 08:12:26.765 [info]   Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-03-22 08:12:26.801 [info] Collecting anyio==4.8.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 44))
+2025-03-22 08:12:26.805 [info]   Downloading anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-03-22 08:12:26.841 [info] Collecting attrs==24.3.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 47))
+2025-03-22 08:12:26.847 [info]   Downloading attrs-24.3.0-py3-none-any.whl (63 kB)
+2025-03-22 08:12:26.885 [info] Collecting blinker==1.9.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 50))
+2025-03-22 08:12:26.890 [info]   Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-03-22 08:12:26.922 [info] Collecting cachetools==5.5.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 53))
+2025-03-22 08:12:26.927 [info]   Downloading cachetools-5.5.1-py3-none-any.whl (9.5 kB)
+2025-03-22 08:12:26.960 [info] Collecting certifi==2024.12.14 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 56))
+2025-03-22 08:12:26.966 [info]   Downloading certifi-2024.12.14-py3-none-any.whl (164 kB)
+2025-03-22 08:12:27.053 [info] Collecting charset-normalizer==3.4.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 83))
+2025-03-22 08:12:27.059 [info]   Downloading charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (145 kB)
+2025-03-22 08:12:27.100 [info] Collecting click==8.1.8 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 112))
+2025-03-22 08:12:27.104 [info]   Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-03-22 08:12:27.148 [info] Collecting dataclasses-json==0.6.7 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 118))
+2025-03-22 08:12:27.152 [info]   Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+2025-03-22 08:12:27.196 [info] Collecting datasets==3.2.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 121))
+2025-03-22 08:12:27.203 [info]   Downloading datasets-3.2.0-py3-none-any.whl (480 kB)
+2025-03-22 08:12:27.272 [info] Collecting dill==0.3.8 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 124))
+2025-03-22 08:12:27.276 [info]   Downloading dill-0.3.8-py3-none-any.whl (116 kB)
+2025-03-22 08:12:27.308 [info] Collecting docstring-parser==0.16 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 127))
+2025-03-22 08:12:27.312 [info]   Downloading docstring_parser-0.16-py3-none-any.whl (36 kB)
+2025-03-22 08:12:27.348 [info] Collecting filelock==3.17.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 130))
+2025-03-22 08:12:27.353 [info]   Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-03-22 08:12:27.392 [info] Collecting flask==3.1.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 133))
+2025-03-22 08:12:27.396 [info]   Downloading flask-3.1.0-py3-none-any.whl (102 kB)
+2025-03-22 08:12:27.463 [info] Collecting frozenlist==1.5.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 136))
+2025-03-22 08:12:27.469 [info]   Downloading frozenlist-1.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (283 kB)
+2025-03-22 08:12:27.513 [info] Collecting fsspec==2024.9.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 169))
+2025-03-22 08:12:27.519 [info]   Downloading fsspec-2024.9.0-py3-none-any.whl (179 kB)
+2025-03-22 08:12:27.603 [info] Collecting google-api-core==2.24.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 172))
+2025-03-22 08:12:27.609 [info]   Downloading google_api_core-2.24.0-py3-none-any.whl (158 kB)
+2025-03-22 08:12:27.685 [info] Collecting google-api-python-client==2.159.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 175))
+2025-03-22 08:12:27.693 [info]   Downloading google_api_python_client-2.159.0-py2.py3-none-any.whl (12.8 MB)
+2025-03-22 08:12:27.864 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 75.1 MB/s eta 0:00:00
+2025-03-22 08:12:27.864 [info] 
+2025-03-22 08:12:27.958 [info] Collecting google-auth==2.38.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 178))
+2025-03-22 08:12:27.963 [info]   Downloading google_auth-2.38.0-py2.py3-none-any.whl (210 kB)
+2025-03-22 08:12:27.996 [info] Collecting google-auth-httplib2==0.2.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 181))
+2025-03-22 08:12:28.000 [info]   Downloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)
+2025-03-22 08:12:28.055 [info] Collecting google-cloud-aiplatform==1.78.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 184))
+2025-03-22 08:12:28.063 [info]   Downloading google_cloud_aiplatform-1.78.0-py2.py3-none-any.whl (7.1 MB)
+2025-03-22 08:12:28.122 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 123.0 MB/s eta 0:00:00
+2025-03-22 08:12:28.122 [info] 
+2025-03-22 08:12:28.309 [info] Collecting google-cloud-bigquery==3.29.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 187))
+2025-03-22 08:12:28.314 [info]   Downloading google_cloud_bigquery-3.29.0-py2.py3-none-any.whl (244 kB)
+2025-03-22 08:12:28.360 [info] Collecting google-cloud-core==2.4.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 190))
+2025-03-22 08:12:28.364 [info]   Downloading google_cloud_core-2.4.1-py2.py3-none-any.whl (29 kB)
+2025-03-22 08:12:28.406 [info] Collecting google-cloud-firestore==2.20.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 193))
+2025-03-22 08:12:28.413 [info]   Downloading google_cloud_firestore-2.20.0-py2.py3-none-any.whl (337 kB)
+2025-03-22 08:12:28.456 [info] Collecting google-cloud-resource-manager==1.14.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 196))
+2025-03-22 08:12:28.463 [info]   Downloading google_cloud_resource_manager-1.14.0-py2.py3-none-any.whl (384 kB)
+2025-03-22 08:12:28.514 [info] Collecting google-cloud-storage==2.19.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 199))
+2025-03-22 08:12:28.518 [info]   Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl (131 kB)
+2025-03-22 08:12:28.559 [info] Collecting google-cloud-texttospeech==2.24.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 202))
+2025-03-22 08:12:28.566 [info]   Downloading google_cloud_texttospeech-2.24.0-py2.py3-none-any.whl (183 kB)
+2025-03-22 08:12:28.626 [info] Collecting google-crc32c==1.6.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 205))
+2025-03-22 08:12:28.632 [info]   Downloading google_crc32c-1.6.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (32 kB)
+2025-03-22 08:12:28.666 [info] Collecting google-resumable-media==2.7.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 212))
+2025-03-22 08:12:28.672 [info]   Downloading google_resumable_media-2.7.2-py2.py3-none-any.whl (81 kB)
+2025-03-22 08:12:28.709 [info] Collecting googleapis-common-protos==1.66.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 215))
+2025-03-22 08:12:28.715 [info]   Downloading googleapis_common_protos-1.66.0-py2.py3-none-any.whl (221 kB)
+2025-03-22 08:12:28.841 [info] Collecting greenlet==3.1.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 218))
+2025-03-22 08:12:28.846 [info]   Downloading greenlet-3.1.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (613 kB)
+2025-03-22 08:12:28.876 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 613.1/613.1 kB 13.5 MB/s eta 0:00:00
+2025-03-22 08:12:28.876 [info] 
+2025-03-22 08:12:28.899 [info] Collecting grpc-google-iam-v1==0.14.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 245))
+2025-03-22 08:12:28.905 [info]   Downloading grpc_google_iam_v1-0.14.0-py2.py3-none-any.whl (27 kB)
+2025-03-22 08:12:29.448 [info] Collecting grpcio==1.70.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 248))
+2025-03-22 08:12:29.456 [info]   Downloading grpcio-1.70.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.9 MB)
+2025-03-22 08:12:29.521 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9/5.9 MB 92.4 MB/s eta 0:00:00
+2025-03-22 08:12:29.521 [info] 
+2025-03-22 08:12:29.581 [info] Collecting grpcio-status==1.70.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 268))
+2025-03-22 08:12:29.587 [info]   Downloading grpcio_status-1.70.0-py3-none-any.whl (14 kB)
+2025-03-22 08:12:29.617 [info] Collecting h11==0.14.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 271))
+2025-03-22 08:12:29.622 [info]   Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2025-03-22 08:12:29.657 [info] Collecting httpcore==1.0.7 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 274))
+2025-03-22 08:12:29.662 [info]   Downloading httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-03-22 08:12:29.699 [info] Collecting httplib2==0.22.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 277))
+2025-03-22 08:12:29.710 [info]   Downloading httplib2-0.22.0-py3-none-any.whl (96 kB)
+2025-03-22 08:12:29.754 [info] Collecting httpx==0.27.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 280))
+2025-03-22 08:12:29.761 [info]   Downloading httpx-0.27.2-py3-none-any.whl (76 kB)
+2025-03-22 08:12:29.791 [info] Collecting httpx-sse==0.4.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 283))
+2025-03-22 08:12:29.796 [info]   Downloading httpx_sse-0.4.0-py3-none-any.whl (7.8 kB)
+2025-03-22 08:12:29.845 [info] Collecting huggingface-hub==0.27.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 286))
+2025-03-22 08:12:29.852 [info]   Downloading huggingface_hub-0.27.1-py3-none-any.whl (450 kB)
+2025-03-22 08:12:29.910 [info] Collecting idna==3.10 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 289))
+2025-03-22 08:12:29.915 [info]   Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-03-22 08:12:29.947 [info] Collecting itsdangerous==2.2.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 292))
+2025-03-22 08:12:29.952 [info]   Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2025-03-22 08:12:29.984 [info] Collecting jinja2==3.1.5 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 295))
+2025-03-22 08:12:29.990 [info]   Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-03-22 08:12:30.024 [info] Collecting jsonpatch==1.33 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 298))
+2025-03-22 08:12:30.028 [info]   Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+2025-03-22 08:12:30.057 [info] Collecting jsonpointer==3.0.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 301))
+2025-03-22 08:12:30.062 [info]   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-03-22 08:12:30.200 [info] Collecting langchain==0.3.15 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 304))
+2025-03-22 08:12:30.219 [info]   Downloading langchain-0.3.15-py3-none-any.whl (1.0 MB)
+2025-03-22 08:12:30.245 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 33.2 MB/s eta 0:00:00
+2025-03-22 08:12:30.247 [info] 
+2025-03-22 08:12:30.293 [info] Collecting langchain-community==0.3.15 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 307))
+2025-03-22 08:12:30.300 [info]   Downloading langchain_community-0.3.15-py3-none-any.whl (2.5 MB)
+2025-03-22 08:12:30.331 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 81.6 MB/s eta 0:00:00
+2025-03-22 08:12:30.332 [info] 
+2025-03-22 08:12:30.395 [info] Collecting langchain-core==0.3.31 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 310))
+2025-03-22 08:12:30.402 [info]   Downloading langchain_core-0.3.31-py3-none-any.whl (412 kB)
+2025-03-22 08:12:30.440 [info] Collecting langchain-google-community==2.0.4 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 313))
+2025-03-22 08:12:30.447 [info]   Downloading langchain_google_community-2.0.4-py3-none-any.whl (84 kB)
+2025-03-22 08:12:30.485 [info] Collecting langchain-google-firestore==0.5.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 316))
+2025-03-22 08:12:30.491 [info]   Downloading langchain_google_firestore-0.5.0-py3-none-any.whl (23 kB)
+2025-03-22 08:12:30.532 [info] Collecting langchain-google-vertexai==2.0.7 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 318))
+2025-03-22 08:12:30.538 [info]   Downloading langchain_google_vertexai-2.0.7-py3-none-any.whl (89 kB)
+2025-03-22 08:12:30.572 [info] Collecting langchain-text-splitters==0.3.5 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 321))
+2025-03-22 08:12:30.579 [info]   Downloading langchain_text_splitters-0.3.5-py3-none-any.whl (31 kB)
+2025-03-22 08:12:30.658 [info] Collecting langsmith==0.3.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 324))
+2025-03-22 08:12:30.663 [info]   Downloading langsmith-0.3.1-py3-none-any.whl (332 kB)
+2025-03-22 08:12:30.744 [info] Collecting markupsafe==3.0.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 327))
+2025-03-22 08:12:30.750 [info]   Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+2025-03-22 08:12:30.808 [info] Collecting marshmallow==3.26.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 359))
+2025-03-22 08:12:30.813 [info]   Downloading marshmallow-3.26.0-py3-none-any.whl (50 kB)
+2025-03-22 08:12:30.851 [info] Collecting more-itertools==10.6.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 362))
+2025-03-22 08:12:30.856 [info]   Downloading more_itertools-10.6.0-py3-none-any.whl (63 kB)
+2025-03-22 08:12:31.022 [info] Collecting multidict==6.1.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 365))
+2025-03-22 08:12:31.028 [info]   Downloading multidict-6.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (131 kB)
+2025-03-22 08:12:31.067 [info] Collecting multiprocess==0.70.16 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 398))
+2025-03-22 08:12:31.073 [info]   Downloading multiprocess-0.70.16-py312-none-any.whl (146 kB)
+2025-03-22 08:12:31.105 [info] Collecting mypy-extensions==1.0.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 405))
+2025-03-22 08:12:31.110 [info]   Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+2025-03-22 08:12:31.357 [info] Collecting numpy==2.2.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 408))
+2025-03-22 08:12:31.365 [info]   Downloading numpy-2.2.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+2025-03-22 08:12:31.526 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.1/16.1 MB 102.5 MB/s eta 0:00:00
+2025-03-22 08:12:31.834 [info] Collecting orjson==3.10.15 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 440))
+2025-03-22 08:12:31.839 [info]   Downloading orjson-3.10.15-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (130 kB)
+2025-03-22 08:12:31.877 [info] Collecting packaging==24.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 468))
+2025-03-22 08:12:31.881 [info]   Downloading packaging-24.2-py3-none-any.whl (65 kB)
+2025-03-22 08:12:32.006 [info] Collecting pandas==2.2.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 471))
+2025-03-22 08:12:32.012 [info]   Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+2025-03-22 08:12:32.134 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 106.4 MB/s eta 0:00:00
+2025-03-22 08:12:32.134 [info] 
+2025-03-22 08:12:32.272 [info] Collecting propcache==0.2.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 493))
+2025-03-22 08:12:32.280 [info]   Downloading propcache-0.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (243 kB)
+2025-03-22 08:12:32.322 [info] Collecting proto-plus==1.25.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 528))
+2025-03-22 08:12:32.328 [info]   Downloading proto_plus-1.25.0-py3-none-any.whl (50 kB)
+2025-03-22 08:12:32.497 [info] Collecting protobuf==5.29.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 531))
+2025-03-22 08:12:32.504 [info]   Downloading protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+2025-03-22 08:12:32.612 [info] Collecting pyarrow==19.0.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 539))
+2025-03-22 08:12:32.620 [info]   Downloading pyarrow-19.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (42.1 MB)
+2025-03-22 08:12:33.088 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 MB 90.1 MB/s eta 0:00:00
+2025-03-22 08:12:33.088 [info] 
+2025-03-22 08:12:33.273 [info] Collecting pyasn1==0.6.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 561))
+2025-03-22 08:12:33.278 [info]   Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+2025-03-22 08:12:33.318 [info] Collecting pyasn1-modules==0.4.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 564))
+2025-03-22 08:12:33.323 [info]   Downloading pyasn1_modules-0.4.1-py3-none-any.whl (181 kB)
+2025-03-22 08:12:33.542 [info] Collecting pydantic==2.10.6 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 570))
+2025-03-22 08:12:33.547 [info]   Downloading pydantic-2.10.6-py3-none-any.whl (431 kB)
+2025-03-22 08:12:34.127 [info] Collecting pydantic-core==2.27.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 573))
+2025-03-22 08:12:34.132 [info]   Downloading pydantic_core-2.27.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+2025-03-22 08:12:34.159 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 75.1 MB/s eta 0:00:00
+2025-03-22 08:12:34.159 [info] 
+2025-03-22 08:12:34.189 [info] Collecting pydantic-settings==2.7.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 603))
+2025-03-22 08:12:34.197 [info]   Downloading pydantic_settings-2.7.1-py3-none-any.whl (29 kB)
+2025-03-22 08:12:34.241 [info] Collecting pyparsing==3.2.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 606))
+2025-03-22 08:12:34.246 [info]   Downloading pyparsing-3.2.1-py3-none-any.whl (107 kB)
+2025-03-22 08:12:34.281 [info] Collecting python-dateutil==2.9.0.post0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 609))
+2025-03-22 08:12:34.285 [info]   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-03-22 08:12:34.325 [info] Collecting python-dotenv==1.0.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 612))
+2025-03-22 08:12:34.329 [info]   Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+2025-03-22 08:12:34.388 [info] Collecting pytz==2024.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 615))
+2025-03-22 08:12:34.395 [info]   Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+2025-03-22 08:12:34.460 [info] Collecting pyyaml==6.0.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 618))
+2025-03-22 08:12:34.466 [info]   Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+2025-03-22 08:12:34.486 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 767.5/767.5 kB 29.9 MB/s eta 0:00:00
+2025-03-22 08:12:34.487 [info] 
+2025-03-22 08:12:34.525 [info] Collecting requests==2.32.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 638))
+2025-03-22 08:12:34.530 [info]   Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-03-22 08:12:34.562 [info] Collecting requests-toolbelt==1.0.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 641))
+2025-03-22 08:12:34.566 [info]   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+2025-03-22 08:12:34.601 [info] Collecting rsa==4.9 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 644))
+2025-03-22 08:12:34.606 [info]   Downloading rsa-4.9-py3-none-any.whl (34 kB)
+2025-03-22 08:12:35.038 [info] Collecting ruff==0.9.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 647))
+2025-03-22 08:12:35.049 [info]   Downloading ruff-0.9.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+2025-03-22 08:12:35.175 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 100.0 MB/s eta 0:00:00
+2025-03-22 08:12:35.175 [info] 
+2025-03-22 08:12:35.303 [info] Collecting shapely==2.0.6 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 666))
+2025-03-22 08:12:35.311 [info]   Downloading shapely-2.0.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.5 MB)
+2025-03-22 08:12:35.340 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 86.9 MB/s eta 0:00:00
+2025-03-22 08:12:35.341 [info] 
+2025-03-22 08:12:35.372 [info] Collecting six==1.17.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 680))
+2025-03-22 08:12:35.376 [info]   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-03-22 08:12:35.403 [info] Collecting sniffio==1.3.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 683))
+2025-03-22 08:12:35.407 [info]   Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-03-22 08:12:35.672 [info] Collecting sqlalchemy==2.0.37 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 686))
+2025-03-22 08:12:35.680 [info]   Downloading SQLAlchemy-2.0.37-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+2025-03-22 08:12:35.717 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 89.6 MB/s eta 0:00:00
+2025-03-22 08:12:35.717 [info] 
+2025-03-22 08:12:35.765 [info] Collecting tenacity==9.0.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 705))
+2025-03-22 08:12:35.769 [info]   Downloading tenacity-9.0.0-py3-none-any.whl (28 kB)
+2025-03-22 08:12:35.823 [info] Collecting tqdm==4.67.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 708))
+2025-03-22 08:12:35.828 [info]   Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-03-22 08:12:35.870 [info] Collecting typing-extensions==4.12.2 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 711))
+2025-03-22 08:12:35.874 [info]   Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-03-22 08:12:35.901 [info] Collecting typing-inspect==0.9.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 714))
+2025-03-22 08:12:35.906 [info]   Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2025-03-22 08:12:35.939 [info] Collecting tzdata==2025.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 717))
+2025-03-22 08:12:35.943 [info]   Downloading tzdata-2025.1-py2.py3-none-any.whl (346 kB)
+2025-03-22 08:12:35.980 [info] Collecting uritemplate==4.1.1 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 720))
+2025-03-22 08:12:35.985 [info]   Downloading uritemplate-4.1.1-py2.py3-none-any.whl (10 kB)
+2025-03-22 08:12:36.025 [info] Collecting urllib3==2.3.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 723))
+2025-03-22 08:12:36.030 [info]   Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-03-22 08:12:36.076 [info] Collecting werkzeug==3.1.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 726))
+2025-03-22 08:12:36.081 [info]   Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+2025-03-22 08:12:36.276 [info] Collecting xxhash==3.5.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 729))
+2025-03-22 08:12:36.281 [info]   Downloading xxhash-3.5.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+2025-03-22 08:12:36.530 [info] Collecting yarl==1.18.3 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 761))
+2025-03-22 08:12:36.535 [info]   Downloading yarl-1.18.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (336 kB)
+2025-03-22 08:12:36.625 [info] Collecting zstandard==0.23.0 (from -r /home/priyasirohi502/yoga-poses-recommender-python/requirements.txt (line 796))
+2025-03-22 08:12:36.634 [info]   Downloading zstandard-0.23.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.4 MB)
+2025-03-22 08:12:36.692 [info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 94.8 MB/s eta 0:00:00
+2025-03-22 08:12:36.692 [info] 
+2025-03-22 08:12:39.123 [info] Installing collected packages: pytz, zstandard, xxhash, urllib3, uritemplate, tzdata, typing-extensions, tqdm, tenacity, sniffio, six, ruff, pyyaml, python-dotenv, pyparsing, pyasn1, pyarrow, protobuf, propcache, packaging, orjson, numpy, mypy-extensions, multidict, more-itertools, markupsafe, jsonpointer, itsdangerous, idna, httpx-sse, h11, grpcio, greenlet, google-crc32c, fsspec, frozenlist, filelock, docstring-parser, dill, click, charset-normalizer, certifi, cachetools, blinker, attrs, annotated-types, aiohappyeyeballs, yarl, werkzeug, typing-inspect, sqlalchemy, shapely, rsa, requests, python-dateutil, pydantic-core, pyasn1-modules, proto-plus, multiprocess, marshmallow, jsonpatch, jinja2, httplib2, httpcore, googleapis-common-protos, google-resumable-media, anyio, aiosignal, requests-toolbelt, pydantic, pandas, huggingface-hub, httpx, grpcio-status, google-auth, flask, dataclasses-json, aiohttp, pydantic-settings, langsmith, grpc-google-iam-v1, google-auth-httplib2, google-api-core, langchain-core, google-cloud-core, google-api-python-client, datasets, langchain-text-splitters, google-cloud-texttospeech, google-cloud-storage, google-cloud-resource-manager, google-cloud-firestore, google-cloud-bigquery, langchain, google-cloud-aiplatform, langchain-google-vertexai, langchain-community, langchain-google-firestore, langchain-google-community
+2025-03-22 08:13:17.869 [info] Successfully installed aiohappyeyeballs-2.4.4 aiohttp-3.11.11 aiosignal-1.3.2 annotated-types-0.7.0 anyio-4.8.0 attrs-24.3.0 blinker-1.9.0 cachetools-5.5.1 certifi-2024.12.14 charset-normalizer-3.4.1 click-8.1.8 dataclasses-json-0.6.7 datasets-3.2.0 dill-0.3.8 docstring-parser-0.16 filelock-3.17.0 flask-3.1.0 frozenlist-1.5.0 fsspec-2024.9.0 google-api-core-2.24.0 google-api-python-client-2.159.0 google-auth-2.38.0 google-auth-httplib2-0.2.0 google-cloud-aiplatform-1.78.0 google-cloud-bigquery-3.29.0 google-cloud-core-2.4.1 google-cloud-firestore-2.20.0 google-cloud-resource-manager-1.14.0 google-cloud-storage-2.19.0 google-cloud-texttospeech-2.24.0 google-crc32c-1.6.0 google-resumable-media-2.7.2 googleapis-common-protos-1.66.0 greenlet-3.1.1 grpc-google-iam-v1-0.14.0 grpcio-1.70.0 grpcio-status-1.70.0 h11-0.14.0 httpcore-1.0.7 httplib2-0.22.0 httpx-0.27.2 httpx-sse-0.4.0 huggingface-hub-0.27.1 idna-3.10 itsdangerous-2.2.0 jinja2-3.1.5 jsonpatch-1.33 jsonpointer-3.0.0 langchain-0.3.15 langchain-community-0.3.15 langchain-core-0.3.31 langchain-google-community-2.0.4 langchain-google-firestore-0.5.0 langchain-google-vertexai-2.0.7 langchain-text-splitters-0.3.5 langsmith-0.3.1 markupsafe-3.0.2 marshmallow-3.26.0 more-itertools-10.6.0 multidict-6.1.0 multiprocess-0.70.16 mypy-extensions-1.0.0 numpy-2.2.2 orjson-3.10.15 packaging-24.2 pandas-2.2.3 propcache-0.2.1 proto-plus-1.25.0 protobuf-5.29.3 pyarrow-19.0.0 pyasn1-0.6.1 pyasn1-modules-0.4.1 pydantic-2.10.6 pydantic-core-2.27.2 pydantic-settings-2.7.1 pyparsing-3.2.1 python-dateutil-2.9.0.post0 python-dotenv-1.0.1 pytz-2024.2 pyyaml-6.0.2 requests-2.32.3 requests-toolbelt-1.0.0 rsa-4.9 ruff-0.9.3 shapely-2.0.6 six-1.17.0 sniffio-1.3.1 sqlalchemy-2.0.37 tenacity-9.0.0 tqdm-4.67.1 typing-extensions-4.12.2 typing-inspect-0.9.0 tzdata-2025.1 uritemplate-4.1.1 urllib3-2.3.0 werkzeug-3.1.3 xxhash-3.5.0 yarl-1.18.3 zstandard-0.23.0
+2025-03-22 08:13:18.615 [info] CREATE_VENV.PIP_INSTALLED_REQUIREMENTS
+2025-03-22 08:13:19.016 [info] Discover tests for workspace name: yoga-poses-recommender-python - uri: /home/priyasirohi502/yoga-poses-recommender-python
+2025-03-22 08:13:19.018 [info] Python interpreter path: ./.venv/bin/python
+2025-03-22 08:13:20.019 [info] Starting Jedi language server for yoga-poses-recommender-python.
